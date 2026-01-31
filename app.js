@@ -142,13 +142,13 @@ menuToggle.addEventListener('click', () => {
             navLinks.style.left = '0';
             navLinks.style.width = '100%';
             navLinks.style.background = 'white';
-            navLinks.style.padding = '5px 4px';
+            navLinks.style.padding = '10px 0 20px';
             navLinks.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
             navLinks.style.zIndex = '1000';
             navLinks.style.borderTop = '2px solid var(--fresh-green)';
             
             langSwitch.style.position = 'absolute';
-            langSwitch.style.top = '140px';
+            langSwitch.style.top = '150px';
             langSwitch.style.right = '10px';
             langSwitch.style.zIndex = '1000';
         }

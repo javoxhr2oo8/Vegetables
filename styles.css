@@ -125,7 +125,7 @@ header .container {
 }
 
 .logo span {
-    color: var(--earth-brown);
+    color: var(--primary-green);
 }
 
 nav {
@@ -136,6 +136,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    animation: nav-link-anim .2s forwards;
 }
 
 .nav-link {
@@ -171,6 +172,17 @@ nav {
     border-radius: 25px;
     overflow: hidden;
     background: white;
+    animation: nav-link-anim .2s forwards;
+}
+
+@keyframes nav-link-anim {
+    from {
+        opacity: 0;
+        margin-top: -5px;
+    } to {
+        opacity: 1;
+        margin-top: 0;
+    }
 }
 
 .lang-btn {
@@ -358,6 +370,7 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 10;
 }
 
 .product-image {
@@ -474,6 +487,14 @@ nav {
 
 .contact-card.telegram::before {
     background: #0088cc;
+}
+
+.contact-card.email::before {
+    background: #ea4335;
+}
+
+.email i{
+    color: #ea4335;
 }
 
 .contact-card.whatsapp::before {
