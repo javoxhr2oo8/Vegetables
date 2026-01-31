@@ -39,10 +39,10 @@ const translations = {
         contactWhatsApp: "Написать в WhatsApp",
         infoTime: "Время приёма заказов",
         infoTimeDetail: "Ежедневно 8:00–21:00",
-        infoDelivery: "Доставка",
-        infoDeliveryDetail: "Москва и МО, 3–5 часов",
+        infoDelivery: "Быстрая Авиа доставка",
+        infoDeliveryDetail: "В течение 24 часов",
         infoPayment: "Оплата",
-        infoPaymentDetail: "Наличные или перевод",
+        infoPaymentDetail: "По контракту",
         footerText: "© 2026 Ферма 'UzHerbs24/7'. <br>Все овощи выращены с заботой о природе.",
         footerBottom: "Мы не используем ГМО, химикаты и искусственные удобрения."
     },
@@ -85,10 +85,10 @@ const translations = {
         contactWhatsApp: "Write in WhatsApp",
         infoTime: "Order acceptance time",
         infoTimeDetail: "Daily 8:00–21:00",
-        infoDelivery: "Delivery",
-        infoDeliveryDetail: "Moscow and region, 3–5 hours",
+        infoDelivery: "Fast Air Delivery",
+        infoDeliveryDetail: "Within 24 hours",
         infoPayment: "Payment",
-        infoPaymentDetail: "Cash or transfer",
+        infoPaymentDetail: "Under the contract",
         footerText: "© 2026 Farm 'UzHerbs24/7'. <br>All vegetables grown with care for nature.",
         footerBottom: "We do not use GMOs, chemicals or artificial fertilizers."
     }
