@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Овощной Рай | Фермерские овощи</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/vegetarian-food.png">
+</head>
+<body>
+    <!-- Хедер -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>ZOROSHOP</span>LLC.
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link active" data-i18n="about">О нас</a></li>
+                    <li><a href="#catalog" class="nav-link" data-i18n="catalog">Каталог</a></li>
+                    <li><a href="#contacts" class="nav-link" data-i18n="contacts">Контакты</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <button id="lang-ru" class="lang-btn active">RU</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-i18n="heroTitle">Свежие овощи <br>прямо с грядки</h1>
+            <p data-i18n="heroSub">Натуральные фермерские продукты без химии. Доставка в день заказа!</p>
+            <a href="#catalog" class="btn" data-i18n="viewCatalog">Выбрать овощи</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="veg veg1">🥬</div>
+            <div class="veg veg2">🥕</div>
+            <div class="veg veg3">🍅</div>
+            <div class="veg veg4">🫑</div>
+            <div class="veg veg5">🥒</div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="aboutTitle">Наша философия</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Фермерское хозяйство" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="aboutSub">Выращено с любовью к земле</h3>
+                    <p data-i18n="aboutText1">
+                        Мы — семейная ферма, работающая с 2010 года. Наши угодья расположены в экологически чистом районе Подмосковья. Мы не используем химические удобрения и пестициды, только натуральные методы земледелия.
+                    </p>
+                    <p data-i18n="aboutText2">
+                        Каждый овощ собирается вручную в день доставки, чтобы сохранить максимум витаминов и свежести. Мы уверены в качестве каждого продукта, потому что выращиваем его сами.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span data-i18n="feature1">100% органические</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span data-i18n="feature2">Доставка за 3 часа</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span data-i18n="feature3">Выращено с заботой</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог овощей -->
+    <section id="catalog" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="catalogTitle">Сезонный урожай</h2>
+            <p class="section-subtitle" data-i18n="catalogSub">Свежесобранные овощи этой недели</p>
+            <div class="catalog-grid">
+                <!-- Овощ 1 -->
+                <div class="product-card">
+                    <div class="product-badge" data-i18n="badgeFresh">Свежий урожай</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Помидоры черри" loading="lazy">
+                    </div>
+                    <h3 data-i18n="product1Name">Помидоры Черри</h3>
+                    <p class="product-desc" data-i18n="product1Desc">Сладкие мини-томаты, собраны сегодня утром. Идеальны для салатов и закусок.</p>
+                    <div class="product-info">
+                        <div class="product-price">450 ₽/кг</div>
+                        <div class="product-weight" data-i18n="weight">~20 шт/кг</div>
+                    </div>
+                </div>
+                
+                <!-- Овощ 2 -->
+                <div class="product-card">
+                    <div class="product-badge" data-i18n="badgeOrganic">Био</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Морковь" loading="lazy">
+                    </div>
+                    <h3 data-i18n="product2Name">Морковь Нантская</h3>
+                    <p class="product-desc" data-i18n="product2Desc">Сочная, хрустящая, сладкая морковь. Без нитратов, выращена на натуральном компосте.</p>
+                    <div class="product-info">
+                        <div class="product-price">120 ₽/кг</div>
+                        <div class="product-weight">~8 шт/кг</div>
+                    </div>
+                </div>
+
+                <!-- Овощ 3 -->
+                <div class="product-card">
+                    <div class="product-badge" data-i18n="badgePopular">Популярное</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1540420773422-292677e6d042?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Огурцы" loading="lazy">
+                    </div>
+                    <h3 data-i18n="product3Name">Огурцы Корнишоны</h3>
+                    <p class="product-desc" data-i18n="product3Desc">Маленькие хрустящие огурчики, идеальны для маринования и свежих салатов.</p>
+                    <div class="product-info">
+                        <div class="product-price">280 ₽/кг</div>
+                        <div class="product-weight">~15 шт/кг</div>
+                    </div>
+                </div>
+
+                <!-- Овощ 4 -->
+                <div class="product-card">
+                    <div class="product-badge" data-i18n="badgeNew">Новинка</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1566389020943-73f24d032f0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Болгарский перец" loading="lazy">
+                    </div>
+                    <h3 data-i18n="product4Name">Перец Болгарский</h3>
+                    <p class="product-desc" data-i18n="product4Desc">Красный, жёлтый, зелёный. Сладкий, мясистый, богат витамином C.</p>
+                    <div class="product-info">
+                        <div class="product-price">390 ₽/кг</div>
+                        <div class="product-weight">~5 шт/кг</div>
+                    </div>
+                </div>
+
+                <!-- Овощ 5 -->
+                <div class="product-card">
+                    <div class="product-badge" data-i18n="badgeSeason">Сезонное</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Картофель" loading="lazy">
+                    </div>
+                    <h3 data-i18n="product5Name">Картофель Молодой</h3>
+                    <p class="product-desc" data-i18n="product5Desc">Нежный молодой картофель с тонкой кожурой. Варится быстро, идеален для пюре.</p>
+                    <div class="product-info">
+                        <div class="product-price">95 ₽/кг</div>
+                        <div class="product-weight">~10 шт/кг</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-note">
+                <i class="fas fa-info-circle"></i>
+                <span data-i18n="catalogNote">Цены указаны за 1 кг. Минимальный заказ — 2 кг. Доставка бесплатна от 1000 ₽.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contactsTitle">Заказать овощи</h2>
+            <p class="section-subtitle" data-i18n="contactsSub">Свяжитесь с нами в мессенджере</p>
+            <div class="contacts-grid">
+                <a href="https://t.me/ovoshnoy_ray" target="_blank" class="contact-card telegram">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p data-i18n="contactTelegram">Написать в Telegram</p>
+                    <div class="contact-id">@ovoshnoy_ray</div>
+                </a>
+                <a href="https://wa.me/79991234567" target="_blank" class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p data-i18n="contactWhatsApp">Написать в WhatsApp</p>
+                    <div class="contact-id">+7 (999) 123-45-67</div>
+                </a>
+            </div>
+            <div class="contacts-info">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4 data-i18n="infoTime">Время приёма заказов</h4>
+                    <p data-i18n="infoTimeDetail">Ежедневно 8:00–21:00</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4 data-i18n="infoDelivery">Доставка</h4>
+                    <p data-i18n="infoDeliveryDetail">Москва и МО, 3–5 часов</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h4 data-i18n="infoPayment">Оплата</h4>
+                    <p data-i18n="infoPaymentDetail">Наличные или перевод</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Овощной</span>Рай
+                </div>
+                <p class="footer-text" data-i18n="footerText">© 2023 Ферма "Овощной Рай". <br>Все овощи выращены с заботой о природе.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footerBottom">Мы не используем ГМО, химикаты и искусственные удобрения.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
