@@ -43,7 +43,7 @@ const translations = {
         infoDeliveryDetail: "Москва и МО, 3–5 часов",
         infoPayment: "Оплата",
         infoPaymentDetail: "Наличные или перевод",
-        footerText: "© 2026 Ферма 'Овощной Рай'. <br>Все овощи выращены с заботой о природе.",
+        footerText: "© 2026 Ферма 'ZOROSHOP LLC.'. <br>Все овощи выращены с заботой о природе.",
         footerBottom: "Мы не используем ГМО, химикаты и искусственные удобрения."
     },
     en: {
@@ -89,7 +89,7 @@ const translations = {
         infoDeliveryDetail: "Moscow and region, 3–5 hours",
         infoPayment: "Payment",
         infoPaymentDetail: "Cash or transfer",
-        footerText: "© 2026 Farm 'Vegetable Paradise'. <br>All vegetables grown with care for nature.",
+        footerText: "© 2026 Farm 'ZOROSHOP LLC.'. <br>All vegetables grown with care for nature.",
         footerBottom: "We do not use GMOs, chemicals or artificial fertilizers."
     }
 };
@@ -136,6 +136,7 @@ menuToggle.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
         if (navLinks.style.display === 'flex') {
             navLinks.style.flexDirection = 'column';
+            navLinks.style.gap = '6px';
             navLinks.style.position = 'absolute';
             navLinks.style.top = '100%';
             navLinks.style.left = '0';
