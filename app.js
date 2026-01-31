@@ -89,7 +89,7 @@ const translations = {
         infoDeliveryDetail: "Moscow and region, 3–5 hours",
         infoPayment: "Payment",
         infoPaymentDetail: "Cash or transfer",
-        footerText: "© 2023 Farm 'Vegetable Paradise'. <br>All vegetables grown with care for nature.",
+        footerText: "© 2026 Farm 'Vegetable Paradise'. <br>All vegetables grown with care for nature.",
         footerBottom: "We do not use GMOs, chemicals or artificial fertilizers."
     }
 };
