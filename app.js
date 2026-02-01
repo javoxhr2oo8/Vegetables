@@ -2,6 +2,7 @@
 const translations = {
     ru: {
         about: "О нас",
+        contactEmail: "Написать в электронную почту",
         catalog: "Каталог",
         contacts: "Контакты",
         heroTitle: "Свежая Зелень <br>прямо с грядки",
@@ -48,6 +49,7 @@ const translations = {
     },
     en: {
         about: "About",
+        contactEmail: "Write an email",
         catalog: "Catalog",
         contacts: "Contacts",
         heroTitle: "Fresh Greens <br>straight from the garden",
