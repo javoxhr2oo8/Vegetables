@@ -30,8 +30,14 @@ const translations = {
         product3Desc: "Маленькие хрустящие огурчики, идеальны для маринования и свежих салатов.",
         product4Name: "Перец Болгарский",
         product4Desc: "Красный, жёлтый, зелёный. Сладкий, мясистый, богат витамином C.",
-        product5Name: "Картофель Молодой",
-        product5Desc: "Нежный молодой картофель с тонкой кожурой. Варится быстро, идеален для пюре.",
+        product5Name: "Кинза",
+        product5Desc: "Кинза — свежая пряная зелень с выраженным ароматом.",
+        product6Name: "Петрушка",
+        product6Desc: "Петрушка — универсальная пряная зелень с мягким освежающим вкусом.",
+        product7Name: "Укроп",
+        product7Desc: "Укроп — популярная пряная зелень с характерным свежим ароматом.",
+        product8Name: "Зеленый лук",
+        product8Desc: "Зеленый лук — свежие перья лука с умеренно острым вкусом",
         weight: "~20 шт/кг",
         catalogNote: "Цены указаны за 1 кг. Минимальный заказ — 2 кг. Доставка бесплатна от 1000 ₽.",
         contactsTitle: "Заказать овощи",
@@ -45,7 +51,9 @@ const translations = {
         infoPayment: "Оплата",
         infoPaymentDetail: "По контракту",
         footerText: "© 2026 Ферма 'UzHerbs24/7'. <br>Все овощи выращены с заботой о природе.",
-        footerBottom: "Мы не используем ГМО, химикаты и искусственные удобрения."
+        footerBottom: "Мы не используем ГМО, химикаты и искусственные удобрения.",
+
+
     },
     en: {
         about: "About",
@@ -77,8 +85,14 @@ const translations = {
         product3Desc: "Small crispy cucumbers, ideal for pickling and fresh salads.",
         product4Name: "Bell Pepper",
         product4Desc: "Red, yellow, green. Sweet, fleshy, rich in vitamin C.",
-        product5Name: "New Potatoes",
-        product5Desc: "Tender young potatoes with thin skin. Cooks quickly, perfect for mash.",
+        product5Name: "Cilantro",
+        product5Desc: "Cilantro — fresh spicy herb with a distinct aroma.",
+        product6Name: "Parsley",
+        product6Desc: "Parsley is a versatile aromatic herb with a mild, refreshing taste.",
+        product7Name: "Dill",
+        product7Desc: "Dill — a popular aromatic herb with a characteristic fresh scent.",
+        product8Name: "Green onion",
+        product8Desc: "Green onions — fresh onion stalks with a mildly pungent taste.",
         weight: "~20 pcs/kg",
         catalogNote: "Prices are per 1 kg. Minimum order — 2 kg. Free delivery from 1000 ₽.",
         contactsTitle: "Order vegetables",
@@ -101,7 +115,7 @@ let currentLang = localStorage.getItem('lang') || 'ru';
 function updateLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
-    
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -112,7 +126,7 @@ function updateLanguage(lang) {
             }
         }
     });
-    
+
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
@@ -134,7 +148,7 @@ const langSwitch = document.querySelector('.lang-switch');
 menuToggle.addEventListener('click', () => {
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
     langSwitch.style.display = langSwitch.style.display === 'flex' ? 'none' : 'flex';
-    
+
     if (window.innerWidth <= 768) {
         if (navLinks.style.display === 'flex') {
             navLinks.style.flexDirection = 'column';
@@ -148,7 +162,7 @@ menuToggle.addEventListener('click', () => {
             navLinks.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
             navLinks.style.zIndex = '1000';
             navLinks.style.borderTop = '2px solid var(--fresh-green)';
-            
+
             langSwitch.style.position = 'absolute';
             langSwitch.style.top = '150px';
             langSwitch.style.right = '10px';
@@ -159,18 +173,18 @@ menuToggle.addEventListener('click', () => {
 
 // Плавная навигация
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
-            
+
             // Закрываем мобильное меню после клика
             if (window.innerWidth <= 768) {
                 navLinks.style.display = 'none';
@@ -184,12 +198,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const scrollPos = window.scrollY + 100;
-    
+
     sections.forEach(section => {
         const top = section.offsetTop;
         const bottom = top + section.offsetHeight;
         const id = section.getAttribute('id');
-        
+
         if (scrollPos >= top && scrollPos <= bottom) {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
