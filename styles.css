@@ -354,6 +354,9 @@ nav {
     text-align: center;
     position: relative;
     border: 1px solid #e8f5e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card:hover {
@@ -405,10 +408,7 @@ nav {
 .product-desc {
     color: #666;
     font-size: 1rem;
-    margin-bottom: 25px;
     line-height: 1.6;
-    height: 75px;
-    overflow: hidden;
 }
 
 .product-info {
@@ -416,8 +416,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px dashed #e0f2e9;
+    padding-top: 10px;
 }
 
 .product-price {
