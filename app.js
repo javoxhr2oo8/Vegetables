@@ -81,7 +81,7 @@ const translations = {
         product1Desc: "Sweet mini tomatoes, picked this morning. Perfect for salads and snacks.",
         product2Name: "Carrots",
         product2Desc: "Juicy, crunchy, sweet carrots. Nitrate-free, grown on natural compost.",
-        product3Name: "Cucumbers",
+        product3Name: "Gherkin Cucumbers",
         product3Desc: "Small crispy cucumbers, ideal for pickling and fresh salads.",
         product4Name: "Bell Pepper",
         product4Desc: "Red, yellow, green. Sweet, fleshy, rich in vitamin C.",
